@@ -9,7 +9,7 @@ Since final grades are not yet available, we will compare the outputs of multipl
 
 ## Mathematical Tools
 
-## The Heart of the Question: Simplest Version
+## The Simplest Version
 
 ## Variations of the Problem
 

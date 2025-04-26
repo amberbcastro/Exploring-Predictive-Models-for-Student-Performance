@@ -23,7 +23,7 @@ Since final grades are not yet available, we will compare the outputs of multipl
 - Consistent scales ensure comparability across models.
 
 ## Modeling Setup and Dataset Information
-The dataset was obtained from the USF Life Science Calc student I section 002. It contains information on students' exam scores for exams 1, 2 and 3. Students are all taught by the same professor and exams are graded by the same graders.
+The dataset was obtained from the USF Life Science Calc student I section 002. It contains information on students' exam scores for exams 1, 2 and 3. Students are all taught by the same professor and exams are graded by the same graders. **Please note that the dataset is not included here because it contains sensitive information, and this page is publicly accessible.**
 ### Variables 
 For the purposes of this project, the following variables were analyzed:
 | Variable Name   | Description                              | Type     | Example Value |

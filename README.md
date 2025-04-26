@@ -2,7 +2,7 @@
 
 # Exploring Predictive Models for Student Performance: A Case Study in Life Science Calculus I Exam Data Modeling
 
-## 1Real-World Problem Statement
+## Real-World Problem Statement
 **Full statement of the problem:**  
 Can we build predictive models using Exam 1 and Exam 2 scores to estimate student performance in Calculus I? 
 

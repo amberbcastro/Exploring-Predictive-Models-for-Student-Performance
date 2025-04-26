@@ -18,20 +18,36 @@ Since final grades are not yet available, we will compare the outputs of multipl
 6. **Content delivered to students consistently throughout the semester**
 
 *Why these are sensible:*  
-- Midterm exams are major components of grade and correlate with understanding.  
+- Midterm exams are major components of final grade and correlate with understanding.  
 - Using Exam 3 avoids waiting for end-of-term grades.  
 - Consistent scales ensure comparability across models.
 
 ## Modeling Setup and Dataset Information
-The dataset was obtained from the USF Life Science Calc student I section 002. Students are all taught by the same professor and exams are graded by the same graders.
-### Variables
+The dataset was obtained from the USF Life Science Calc student I section 002. It contains information on students' exam scores for exams 1, 2 and 3. Students are all taught by the same professor and exams are graded by the same graders.
+### Variables 
 For the purposes of this project, the following variables were analyzed:
-| Variable Name   | Description                              | Type     | Default Value |
+| Variable Name   | Description                              | Type     | Example Value |
 |-----------------|------------------------------------------|----------|---------------|
 | `SID`| Student ID | `number` | `123456788` |
 | `Total Score`| Student's score on Exam | `number` | `98` |
 | `Max Points`| Highest amount of Points a student could obtain | `number` | `105` |
 | `Status`| Whether exam was graded or missing | `string` | `Graded or Missing` |
+
+### Summary statistics of Dataset
+Number of students: 160 
+| Variable Name   | Exam 1     | Exam 2     | Exam 3     |
+|-----------------|----------|----------|----------|
+| `Mean`|  `59.163` | `73.064` | `fill in later` |
+| `Q1`|  `42.5` | `59.875` | `fill in later` |
+| `Q3`|  `78.0` | `90.125` | `fill in later` |
+| `Median`| `57.5` | `76.0` | `fill in later` |
+| `Maximum`|  `104.0` | `107.0` | `fill in later` |
+| `Minimum`|  `5.5` | `10.0` | `fill in later` |
+| `Count of Missing`|  `7` | `12` | `fill in later` |
+| `Max Points (Available)`|  `105` | `107` | `fill in later` |
+
+
+
 
 
 ## Mathematical Tools

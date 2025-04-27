@@ -4,9 +4,9 @@
 
 ## Real-World Problem Statement
 **Full statement of the problem:**  
-Can we build predictive models using Exam 1 and Exam 2 scores to estimate student performance in Calculus I? 
+With final exams quickly approaching, students are often dreading the finals grind filled with lots of caffeine and an overwhelming amount of studying. Professors are equally yearning for the semester’s close as class attendance dwindles and assignments to finish grading stack up. 
 
-Since final grades are not yet available, we will compare the outputs of multiple modeling approaches to understand their assumptions, behaviors and potential for future use.
+But are final exams an accurate representation of student knowledge and performance in a course – or can we just accept the exams taken during the semester as good enough?
 
 ## Assumptions
 1. **Exam scores reflect student learning and effort.**  

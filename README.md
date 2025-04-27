@@ -40,14 +40,14 @@ For the purposes of this project, the following variables were analyzed:
 Number of students: 160 
 | Variable Name   | Exam 1     | Exam 2     | Exam 3     |
 |-----------------|----------|----------|----------|
-| `Mean`|  `59.163` | `73.064` | `fill in later` |
-| `Q1`|  `42.5` | `59.875` | `fill in later` |
-| `Q3`|  `78.0` | `90.125` | `fill in later` |
-| `Median`| `57.5` | `76.0` | `fill in later` |
-| `Maximum`|  `104.0` | `107.0` | `fill in later` |
-| `Minimum`|  `5.5` | `10.0` | `fill in later` |
-| `Count of Missing`|  `7` | `12` | `fill in later` |
-| `Max Points (Available)`|  `105` | `107` | `fill in later` |
+| `Mean`|  `59.163` | `73.064` | `66.531` |
+| `Q1`|  `42.5` | `59.875` | `58.25` |
+| `Q3`|  `78.0` | `90.125` | `77.75` |
+| `Median`| `57.5` | `76.0` | `67.0` |
+| `Maximum`|  `104.0` | `107.0` | `102.0` |
+| `Minimum`|  `5.5` | `10.0` | `15.0` |
+| `Count of Missing`|  `7` | `12` | `33` |
+| `Max Points (Available)`|  `105` | `107` | `105` |
 
 
 

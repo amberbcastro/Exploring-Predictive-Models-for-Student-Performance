@@ -11,19 +11,19 @@ But are final exams an accurate representation of student knowledge and performa
 ## Assumptions
 1. **Exam scores reflect student learning and effort.**  
    Exams are standardized and graded consistently.  
-2. **In absence of final grade data, Exam 3 can serve as a proxy** for overall performance.  
+2. **In absence of final grade data, Exam 3 can serve as a proxy for overall course performance.**  
 3. **All exam scores use a consistent scale.**
 4. **All exams cover the same amount of content**
 5. **All exams have the same difficulty**
 6. **Content delivered to students consistently throughout the semester**
 
 *Why these are sensible:*  
-- Midterm exams are major components of final grade and correlate with understanding.  
-- Using Exam 3 avoids waiting for end-of-term grades.  
+- Midterm exams are major components of final grade calculation and correlate with understanding.  
+- Using Exam 3 avoids waiting for end-of-term grades to meet our project deadline.  
 - Consistent scales ensure comparability across models.
 
 ## Modeling Setup and Dataset Information
-The dataset was obtained from the USF Life Science Calc student I section 002. It contains information on students' exam scores for exams 1, 2 and 3. Students are all taught by the same professor and exams are graded by the same graders. **Please note that the dataset is not included here because it contains sensitive information, and this page is publicly accessible.**
+The dataset was obtained from the USF Life Science Calculus I section 002 of Spring 2025. It contains information on students' exam scores for exams 1, 2 and 3. Students are all taught by the same professor and exams are graded by the same 4 graders. **Please note that the dataset is not included here because it contains sensitive information, and this page is publicly accessible.**
 ### Variables 
 For the purposes of this project, the following variables were analyzed:
 | Variable Name   | Description                              | Type     | Example Value |

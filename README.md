@@ -49,7 +49,7 @@ Number of students: 160
 | `Count of Missing`|  `7` | `12` | `33` |
 | `Max Points (Available)`|  `105` | `107` | `105` |
 
-![Box_Plot_Exams](ggraphs/box_plot_exam_scores.png)
+![Box_Plot_Exams](graphs/box_plot_exam_scores.png)
 
 
 ## Mathematical Tools

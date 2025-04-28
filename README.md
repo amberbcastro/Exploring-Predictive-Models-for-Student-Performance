@@ -94,10 +94,18 @@ The simplest version of our problem is:
 ### Solving the Simplest Version
 
 **Approach 1: Linear Regression**
+Linear regression draws the best straight line through the data points to predict Exam 3 scores based on Exam 1 and Exam 2 scores. It finds the line that keeps the distance between the actual scores and the predicted scores as small as possible. The model gives a formula that shows how much each exam contributes to the final predicted score. It is simple to predict a number (like an exam score) and it lets us see clearly how Exam 1 and Exam 2 relate to Exam 3.It also gives a good starting point before trying more complicated methods.
+
+**Code**
+**Results**
 
 **Approach 2: Logistic Regression with Cross Validation**
 
 **Approach 3: K-Means Clustering with Silhouette Analysis**
+K-Means looks at students’ Exam 1, Exam 2, and Exam 3 scores and tries to group them into clusters based on how similar their scores are. The algorithm starts by guessing some group centers, then moves them around until students are close to the center of their group. It lets us find natural groups, like students who did well all semester, students who improved, or students who struggled. Silhouette analysis will allow us to check how well the students fit into their clusters by seeing if they are closer to their own group than to other groups. It ensures that the clusters identified make sense and aren't just random.
+
+**Code**
+**Results**
 
 ## Variations of the Problem
 

@@ -23,6 +23,21 @@ But are final exams an accurate representation of student knowledge and performa
 - Consistent delivery of content throughout the semester supports the idea that exam scores measure the same skills and knowledge at each point.  
 - Standardized grading ensures that differences in scores are due to student performance rather than grading inconsistencies.
 
+## Fields of Mathematics that might help
+### 1. Statistics
+*Analyze data on student performance across different exams in a standardized way*
+- Descriptive statistics (like mean, medium, standard deviation, etc) to compare performance on midterm exams versus final exam
+- Inferential statistics (like t-tests, ANOVA, etc) to determine if these differences are statistically significant
+- Correlation and regression models (like linear or logistic regression) to see how well midterm exams predict final exam scores
+### 2. Probability Theory
+*Visualize data distribution of student performance for each exam* 
+-Probability distributions to understand skewness, variability and outliers
+-Bayesian inference to update prediction model by refining inferences as more student data is collected
+### 3. Machine Learning
+*To build predictive models for student success without relying solely on finals*
+-Supervised learning (like linear regression) to try to predict final exam grades based on midterm exam grades
+-Classification models to categorize students by their performance levels
+
 ## Modeling Setup and Dataset Information
 The dataset was obtained from the USF Life Science Calculus I section 002 of Spring 2025. It contains information on students' exam scores for exams 1, 2 and 3. Students are all taught by the same professor and exams are graded by the same 4 graders. 
 

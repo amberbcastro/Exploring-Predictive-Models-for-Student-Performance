@@ -31,12 +31,12 @@ But are final exams an accurate representation of student knowledge and performa
 - Correlation and regression models (like linear or logistic regression) to see how well midterm exams predict final exam scores
 ### 2. Probability Theory
 *Visualize data distribution of student performance for each exam* 
--Probability distributions to understand skewness, variability and outliers
--Bayesian inference to update prediction model by refining inferences as more student data is collected
+- Probability distributions to understand skewness, variability and outliers
+- Bayesian inference to update prediction model by refining inferences as more student data is collected
 ### 3. Machine Learning
 *To build predictive models for student success without relying solely on finals*
--Supervised learning (like linear regression) to try to predict final exam grades based on midterm exam grades
--Classification models to categorize students by their performance levels
+- Supervised learning (like linear regression) to try to predict final exam grades based on midterm exam grades
+- Classification models to categorize students by their performance levels
 
 ## Modeling Setup and Dataset Information
 The dataset was obtained from the USF Life Science Calculus I section 002 of Spring 2025. It contains information on students' exam scores for exams 1, 2 and 3. Students are all taught by the same professor and exams are graded by the same 4 graders. 

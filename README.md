@@ -79,7 +79,25 @@ Number of students: 160
   - **How:** We measure for each student how close they are to their own group compared to the next closest group, then average those scores.
 
 
-## The Simplest Version
+## Variations on the Same Theme
+
+### Simplest Version of the Problem
+
+The simplest version of our problem is:  
+**Can we predict a student's Exam 3 score using only their Exam 1 and Exam 2 scores?**
+ 
+- We **cut out** any information about homework, quizzes, participation, or attendance, even though these likely contribute to final course grades. These additional factors would require more complex models, and we do not have access to that data.
+- We **kept** Exam 1 and Exam 2 scores because they are standardized, graded consistently, and readily available for all students. They provide a focused, measurable snapshot of student learning during the semester.
+- By narrowing it down to only midterm exams, we reduce the number of variables, avoid introducing noise from incomplete or subjective data, and focus purely on major, objective assessments.
+- This approach is manageable within the timeframe of the project and aligns directly with our goal: testing whether mid-semester performance alone can be a strong enough indicator of final outcomes without needing to rely on final exams.
+
+### Solving the Simplest Version
+
+**Approach 1: Linear Regression**
+
+**Approach 2: Logistic Regression with Cross Validation**
+
+**Approach 3: K-Means Clustering with Silhouette Analysis**
 
 ## Variations of the Problem
 

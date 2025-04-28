@@ -112,7 +112,34 @@ The simplest version of our problem is:
 Linear regression draws the best straight line through the data points to predict Exam 3 scores based on Exam 1 and Exam 2 scores. It finds the line that keeps the distance between the actual scores and the predicted scores as small as possible. The model gives a formula that shows how much each exam contributes to the final predicted score. It is simple to predict a number (like an exam score) and it lets us see clearly how Exam 1 and Exam 2 relate to Exam 3.It also gives a good starting point before trying more complicated methods.
 
 **Code**
+
 **Results**
+#### 3D Visualization of Exam Scores   
+![3D Visualization of Exam Scores](graphs/3d_exam_scores.png)
+
+#### Predicted vs. Actual Exam 3   
+![Predicted vs Actual Exam 3](graphs/predicted_vs_actual.png)
+
+#### Model Metrics 
+| Metric  | Value     |
+|-----------------|----------|
+| `MAE`|  `6.57` |
+| `RMSE`|  `7.85` |
+| `R^2 Score`|  `0.71` |
+| `Intercept`| `9.34` | 
+| `Exam 1 coefficient`|  `0.23` | 
+| `Exam 2 coeeficient`|  `0.54` | 
+
+#### What this means
+- **R² = 0.71**  
+  About 71% of the variation in Exam 3 can be explained by Exams 1 and 2.  
+- **MAE ≈ 6.6, RMSE ≈ 7.9**  
+  On average we’re off by 6–8 percentage points when we predict Exam 3.  
+- **Intercept = 9.34**  
+  Even with 0% on the first two exams, the model predicts ~9% on Exam 3.  
+- **Weights (0.23 vs 0.54)**  
+  Each extra percent on Exam 1 adds 0.23% to the predicted Exam 3, while each percent on Exam 2 adds 0.54%. That tells us Exam 2 is roughly twice as important for predicting the final exam score.
+
 
 **Approach 2: Logistic Regression with Cross Validation**
 

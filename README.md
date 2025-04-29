@@ -112,6 +112,7 @@ The simplest version of our problem is:
 Linear regression draws the best straight line through the data points to predict Exam 3 scores based on Exam 1 and Exam 2 scores. It finds the line that keeps the distance between the actual scores and the predicted scores as small as possible. The model gives a formula that shows how much each exam contributes to the final predicted score. It is simple to predict a number (like an exam score) and it lets us see clearly how Exam 1 and Exam 2 relate to Exam 3.It also gives a good starting point before trying more complicated methods.
 
 **Code**
+
 [Linear Regression Model Script](code/Student_Scores_Linear.ipynb)
 
 **Results**

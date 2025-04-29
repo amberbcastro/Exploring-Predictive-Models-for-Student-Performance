@@ -151,6 +151,8 @@ K-Means looks at students’ Exam 1, Exam 2, and Exam 3 scores and tries to grou
 
 **Code**
 
+[K_Means_Script](code/Student_Scores_K_Means_Clustering.ipynb)
+
 **Results**
 
 #### Elbow Method  

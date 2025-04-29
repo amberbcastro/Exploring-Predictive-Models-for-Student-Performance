@@ -191,8 +191,7 @@ Silhoette Score: 0.41
 | Source | Short take-away | Why it helps us |
 |--------|-----------------|-----------------|
 | **KOTSIANTIS, S, C PIERRAKEAS, and P PINTELAS. “PREDICTING STUDENTS’ PERFORMANCE IN DISTANCE LEARNING USING MACHINE LEARNING TECHNIQUES.”** Applied artificial intelligence 18.5 (2004): 411–426. Web.. | Adding assignment scores to midterm marks raised pass/fail accuracy by ~10 %. | Shows homework really boosts prediction and uses simple algorithms we could copy. |
-| **Macfadyen, Leah P, and Shane Dawson. “Mining LMS Data to Develop an ‘Early Warning System’ for Educators: A Proof of Concept.”** Computers and education 54.2 (2010): 588–599. Web.
- | Early-semester homework clicks and forum posts were strong signals in a logistic model. | Gives a way to turn routine homework activity into numbers if raw scores are messy. |
+| **Macfadyen, Leah P, and Shane Dawson. “Mining LMS Data to Develop an ‘Early Warning System’ for Educators: A Proof of Concept.”** Computers and education 54.2 (2010): 588–599. Web.| Early-semester homework clicks and forum posts were strong signals in a logistic model. | Gives a way to turn routine homework activity into numbers if raw scores are messy. |
 
 
 **Find one more source**

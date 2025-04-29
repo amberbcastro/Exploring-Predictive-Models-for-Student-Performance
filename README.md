@@ -178,4 +178,21 @@ Silhoette Score: 0.41
 
 ## Variations of the Problem
 
+| Variation | What changes | Advantages | Disadvantages |
+|-----------|--------------|------------|---------------|
+| **V3 – Add Homework Average** | Use Exam 1, Exam 2 **and** each student’s average homework score to predict Exam 3. | *More information* – homework shows day-to-day effort, likely improving accuracy. | We don’t have homework data yet. Homework scores can be missing or inflated by copying. |
+| **V4 – Full Course Grade (Many Features)** | Predict the **final course grade** using every numeric feature we can get: exams, homework, quizzes, attendance, LMS clicks. | Could give the tightest prediction and show which factors matter most. | Needs lots of extra data we don’t have. More complex model → harder to explain and easier to over-fit. |
+| **V5 – Week-by-Week Forecast (Neural Network)** | Feed weekly scores to a small recurrent neural network to forecast each student’s future path during the term. | Lets advisors step in much earlier because we see trouble weeks ahead. | Requires detailed weekly data and far more records, one class of 160 is too small. |
+
+---
+
+#### Mini-Literature Review for V3 -Homework Feature
+
+| Source | Short take-away | Why it helps us |
+|--------|-----------------|-----------------|
+| **KOTSIANTIS, S, C PIERRAKEAS, and P PINTELAS. “PREDICTING STUDENTS’ PERFORMANCE IN DISTANCE LEARNING USING MACHINE LEARNING TECHNIQUES.”** Applied artificial intelligence 18.5 (2004): 411–426. Web.. | Adding assignment scores to midterm marks raised pass/fail accuracy by ~10 %. | Shows homework really boosts prediction and uses simple algorithms we could copy. |
+| **Macfadyen, Leah P, and Shane Dawson. “Mining LMS Data to Develop an ‘Early Warning System’ for Educators: A Proof of Concept.”** Computers and education 54.2 (2010): 588–599. Web.
+ | Early-semester homework clicks and forum posts were strong signals in a logistic model. | Gives a way to turn routine homework activity into numbers if raw scores are messy. |
+**Find one more source**
+
 ## The Pitch

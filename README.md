@@ -145,11 +145,34 @@ Linear regression draws the best straight line through the data points to predic
 
 **Approach 2: Logistic Regression with Cross Validation**
 
-**Approach 3: K-Means Clustering with Silhouette Analysis**
-K-Means looks at students’ Exam 1, Exam 2, and Exam 3 scores and tries to group them into clusters based on how similar their scores are. The algorithm starts by guessing some group centers, then moves them around until students are close to the center of their group. It lets us find natural groups, like students who did well all semester, students who improved, or students who struggled. Silhouette analysis will allow us to check how well the students fit into their clusters by seeing if they are closer to their own group than to other groups. It ensures that the clusters identified make sense and aren't just random.
+**Approach 3: K-Means Clustering with Elbow Method + Silhouette Analysis**
+
+K-Means looks at students’ Exam 1, Exam 2, and Exam 3 scores and tries to group them into clusters based on how similar their scores are. The algorithm starts by guessing some group centers, then moves them around until students are close to the center of their group. It lets us find natural groups, like students who did well all semester, students who improved, or students who struggled. We used the Elbow Method to decide how many clusters to look for: we run K-Means with different values of k, plot the total inertia (how tightly students are grouped) against k, and pick the k at the point where the curve bends sharply. Once we’ve chose that k, the K-Means algorithm initializes cluster centers, assigns each student to the nearest center, and then moves each center to the average of its assigned students, repeating this until assignments stabilize. Finally, we apply Silhouette Analysis—which compares how close each student is to their own cluster versus the next-closest cluster to confirm that the clusters we’ve found make sense and are not just random.  
 
 **Code**
+
 **Results**
+
+#### Elbow Method  
+_To pick the best number of clusters, we plotted inertia vs. k:_  
+![Elbow Plot: Inertia vs. k](graphs/elbow_plot.png)  
+- We see a sharp drop in inertia from **k = 2** to **k = 3**, then much smaller gains afterward.  
+- That “elbow” at **3** suggests **k = 3** is the sweet spot.
+
+#### Cluster Plot  
+_Using k = 3, here’s how students group by their three exam percentages:_  
+![K-Means Clustering of Exam Scores](graphs/3d_cluster_plot.png)
+
+#### Model Metric  
+Silhoette Score: 0.41
+
+#### What this means  
+- **Elbow plot** told us to use **3 clusters** because adding more than three only slightly reduces inertia.  
+- **Silhouette = 0.41** means our three groups are fairly clear but have some overlap.  
+- We can see three general types of students:  
+  1. **High Performers** – high scores on all exams.  
+  2. **Average** – middle-range scores.  
+  3. **At Risk** – lower scores across the board
 
 ## Variations of the Problem
 

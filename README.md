@@ -77,27 +77,39 @@ Number of students: 160
 - Because each exam had a different maximum number of points available (e.g., 105, 107), **all exam scores were converted to percentages to ensure comparability across exams.**
 - **Students missing a grade for any of the three exams were excluded from the final dataset.** This decision was made to maintain consistency in the analysis and to ensure that all models were trained and evaluated on complete information.
 
+## How to Run the Code
+
+1. **Get your Dataset:**  
+   As previously mentioned, the dataset used will not be provided for privacy reasons. However, if you have data for an exam1, 2, and 3 you can use this. Ensure the data is in the csv format with the columns SID, Total Score, Status, and Max Points.
+
+2. **Update the File Path:**  
+   In the respective scripts, replace the file path in the following line with the location where you saved the dataset:
+   ```
+   exam1 = pd.read_csv("Exam_1_scores.csv")
+   exam2 = pd.read_csv("Exam_2_scores.csv")
+   exam3 = pd.read_csv("Exam_3_scores.csv")
+   
+3. **Run the Script:**
+  Execute the file(s) in your Python/R environment.
+
 ## Mathematical Tools
 
 - **Linear Regression**  
-  - **Why:** To predict a student’s Exam 3 score using their Exam 1 and Exam 2 scores.  
-  - **How:** We draw the best straight line through the data points so it’s as close as possible to all the exam scores.
+  - **Why:** To guess a student’s Exam 3 score from their Exam 1 and Exam 2 scores.  
+  - **How:** We draw a straight line through the points so it’s as close as possible to all of them.  
+  - **Hold-out Test:** We keep 20% of the data separate and train on the other 80%. Then we check the held-out 20% to make sure the line works on data it hasn’t seen. This helps us catch if the model is just memorizing the training data instead of learning the real pattern. This validation method was chosen for its simplicity.
 
 - **Logistic Regression**  
-  - **Why:** 
-  - **How:** 
+  - **Why:**   
+  - **How:**   
+  - **Cross-Validation:** 
 
 - **K-Means Clustering**  
-  - **Why:** To find natural groups of students based on their three exam scores.  
-  - **How:** We pick a number of groups (k), place a point for each group, assign students to the closest point, then move those points to the average of their assigned students until it stops changing.
-
-- **Cross-Validation**  
-  - **Why:** To check if our models work well on new data.  
-  - **How:** We split the data into parts, train the model on some parts and test on the rest, then repeat for each part and average the results.
-
-- **Silhouette Analysis**  
-  - **Why:** To see how clear the clusters are.  
-  - **How:** We measure for each student how close they are to their own group compared to the next closest group, then average those scores.
+  - **Why:** To find groups of students who have similar exam results.  
+  - **How:**  
+    1. **Elbow Plot:** We run K-Means with different numbers of groups, then plot “total distance within groups” (which we call inertia) versus k. We look for the “elbow” point where adding more groups stops improving the fit much. This helps us pick a sensible k without guessing.  
+    2. **Group Assignment:** With that k, we place k center points, assign each student to the nearest center, then move each center to the average of its members, and repeat until nothing changes.  
+    3. **Silhouette Score:** For each student, we measure how close they are to their own group versus the next nearest group and average those numbers. A higher silhouette score means students fit well in their groups and clusters are clear.
 
 
 ## Variations on the Same Theme

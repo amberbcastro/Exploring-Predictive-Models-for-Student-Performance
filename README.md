@@ -206,7 +206,7 @@ Silhoette Score: 0.41
 
 #### Mini-Literature Review for V1 -Homework Feature
 
-| Source | Short take-away | Why it helps us |
+| Source | Take-away | Why it helps us |
 |--------|-----------------|-----------------|
 | **KIM, A. S. N., C. R. STEVENSON, and L. PARK. “HOMEWORK, IN-CLASS ASSIGNMENTS, AND MIDTERM EXAMS: INVESTIGATING THE PREDICTIVE UTILITY OF FORMATIVE AND SUMMATIVE ASSESSMENTS FOR ACADEMIC SUCCESS.”** _Open Scholarship of Teaching and Learning_ 2.1 (2022): 92–102. | Homework average adds significant predictive power beyond midterm alone in linear regression. | Confirms that adding homework to Exam 1 & 2 will improve Exam 3 predictions by capturing ongoing engagement and learning. |
 | **THOMPSON, B., and B. ZAMBOANGA. “ACADEMIC APTITUDE AND PRIOR KNOWLEDGE AS PREDICTORS OF STUDENT ACHIEVEMENT IN AN INTRODUCTORY PSYCHOLOGY COURSE.”** _Journal of Educational Psychology_ 96.4 (2004): 778–784. | Combining midterm exam scores with cumulative homework explains ~60% of variance in final course grade. | Shows homework is the next strongest predictor after exams, boosting overall model R². |

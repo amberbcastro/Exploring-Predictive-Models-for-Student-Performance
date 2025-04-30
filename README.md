@@ -53,6 +53,12 @@ For the purposes of this project, the following variables were analyzed:
 | `Status`| Whether exam was graded or missing | `string` | `Graded or Missing` |
 
 ### Summary Statistics of the Dataset
+
+**Code** 
+
+[Summary_Stats Script](code/Student_Scores_Summary_Stats.ipynb)
+
+
 Number of students: 160 
 | Variable Name   | Exam 1     | Exam 2     | Exam 3     |
 |-----------------|----------|----------|----------|

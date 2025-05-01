@@ -165,7 +165,9 @@ Linear regression draws the best straight line through the data points to predic
 
 Logistic Regression analyzes the relationship between a dependent categorical variable, and one or more independent predictor variables. A categorical variable is a value that has different levels based on the values the variable takes on. A cateogrical variable in logistic regression is of a binary form. In other words, the variable only has two outcomes. The goal of logistic regression is to predict the probability of an instance belongs to one of the two outcomes. There are two classes: positive and negative. The positive class is typically the outcome researchers want to study. The negative class is still of interest, but is not as heavily focused on. For the two classes, there are dummy variables introduced in plaace of the actual values. For our project, we changed a student's Exam 3 score to 1 if it was above at or above 70, and 0 if it was below 70. Changing the values of the dependent variable simplifies the problem into a classification problem. So, instead of looking for a number like in linear regression, we are looking for how well the model classifies a student's Exam 3 score based on their Exam 1 and Exam 2 scores. 
 
+**Code**
 
+[Logistic Regression Script](Student_Scores_Logistic_Regression.Rmd)
 
 **Approach 3: K-Means Clustering with Elbow Method + Silhouette Analysis**
 

@@ -1,0 +1,105 @@
+---
+title: "Untitled"
+author: "Colin Taylor U83393638"
+date: "2025-04-28"
+output: word_document
+---
+
+```{r}
+#read in data
+Exam_1<-read.csv("Exam_1_scores.csv",stringsAsFactors = F)
+Exam_2<-read.csv("Exam_2_scores.csv", stringsAsFactors = F)
+Exam_3<-read.csv("Exam_3_scores.csv", stringsAsFactors = F)
+```
+
+```{r}
+#Arrange data frames
+library(dplyr)
+Common_names <- Reduce(intersect, list(Exam_1$Names, Exam_2$Names, Exam_3$Names))
+
+Exam_1_sorted<- Exam_1 %>% filter(Names %in% Common_names)
+Exam_2_sorted<- Exam_2 %>% filter(Names %in% Common_names)
+Exam_3_sorted <- Exam_3 %>% filter(Names %in% Common_names)
+```
+
+```{r}
+#Sort exam scores by name
+Exam_1_sorted<- Exam_1_sorted %>% 
+  arrange(Names)
+
+Exam_2_sorted<- Exam_2_sorted %>% 
+  arrange(Names)
+
+Exam_3_sorted<- Exam_3_sorted %>% 
+  arrange(Names)
+```
+
+
+```{r}
+#Change exam 3 scores into binary
+label<-ifelse(Exam_3_sorted$Score >= 70, 1, 0)
+```
+
+```{r}
+#Remove names not in Exam 3
+Exam_1_sorted<-Exam_1_sorted[-59,]
+Exam_1_sorted<-Exam_1_sorted[-85,]
+
+Exam_2_sorted<-Exam_2_sorted[-60,]
+Exam_2_sorted<-Exam_2_sorted[-85,]
+```
+
+```{r}
+#Create final data frame
+df<-data.frame(label, Exam_1_sorted$Score, Exam_2_sorted$Score)
+df$label<-as.factor(df$label) #change target variable into factor
+```
+
+
+
+```{r}
+# Set up cross-validation method
+library(caret)
+train_indices <- createDataPartition(df$label, p = 0.7, list = FALSE)
+train_data<- df[train_indices,]
+test_data<- df[-train_indices,]
+```
+
+
+```{r}
+#Run the model
+model<-glm(label ~ Exam_1_sorted.Score + Exam_2_sorted.Score, data = train_data, family = binomial)
+summary(model)
+```
+
+```{r}
+test_predictions_prob <- predict(model, 
+                                 newdata = test_data, 
+                                 type = "response")
+```
+
+
+```{r}
+#manipulate data and create confusion matrix
+test_predictions <- ifelse(test_predictions_prob > 0.5, 1, 0)
+test_predictions <- factor(test_predictions, levels = c(0, 1))
+confusion <- confusionMatrix(test_predictions, test_data$label, positive = "1")
+confusion
+```
+
+```{r}
+cat("\nAccuracy:", confusion$overall["Accuracy"], "\n")
+cat("Sensitivity:", confusion$byClass["Sensitivity"], "\n")
+cat("Specificity:", confusion$byClass["Specificity"], "\n")
+```
+
+```{r}
+#RUC curve
+if(require(pROC)) {
+  roc_obj <- roc(test_data$label, test_predictions_prob)
+  auc_value <- auc(roc_obj)
+  
+  plot(roc_obj, main = paste("ROC Curve (AUC =", round(auc_value, 3), ")"))
+}
+```
+

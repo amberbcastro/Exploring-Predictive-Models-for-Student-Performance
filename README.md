@@ -167,7 +167,7 @@ Logistic Regression analyzes the relationship between a dependent categorical va
 
 **Code**
 
-[Logistic Regression Script](Student_Scores_Logistic_Regression.Rmd)
+[Logistic Regression Script](code/Student_Scores_Logistic_Regression.Rmd)
 
 **Approach 3: K-Means Clustering with Elbow Method + Silhouette Analysis**
 

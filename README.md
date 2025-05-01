@@ -100,9 +100,9 @@ Number of students: 160
   - **Hold-out Test:** We keep 20% of the data separate and train on the other 80%. Then we check the held-out 20% to make sure the line works on data it hasn’t seen. This helps us catch if the model is just memorizing the training data instead of learning the real pattern. This validation method was chosen for its simplicity.
 
 - **Logistic Regression**  
-  - **Why:**   
-  - **How:**   
-  - **Cross-Validation:** 
+  - **Why:** To guess a student's Exam 3 score from their Exam 1 and Exam 2 Scores.   
+  - **How:** We changed the scores from Exam 3 into a binary variable. If a student's score was above a 70, the score was changed into a one. Any score below a 70 was changed to a 0.  
+  - **Cross-Validation:** We kept 70% of the data for training the model, and the remaining 30% for testing the model. Model metrics such as accuracy, precision, and recall were developed from the testing data in the form of a confusion matrix. 
 
 - **K-Means Clustering**  
   - **Why:** To find groups of students who have similar exam results.  

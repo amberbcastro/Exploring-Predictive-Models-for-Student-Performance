@@ -162,6 +162,7 @@ Linear regression draws the best straight line through the data points to predic
 
 
 **Approach 2: Logistic Regression with Cross Validation**
+Logistic Regression analyzes the relationship between a dependent categorical variable, and one or more independent predictor variables. A categorical variable is a value that has different levels based on the values the variable takes on. A cateogrical variable in logistic regression is of a binary form. In other words, the variable only has two outcomes. 
 
 **Approach 3: K-Means Clustering with Elbow Method + Silhouette Analysis**
 

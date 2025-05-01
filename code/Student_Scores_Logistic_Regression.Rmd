@@ -1,9 +1,3 @@
----
-title: "Untitled"
-author: "Colin Taylor U83393638"
-date: "2025-04-28"
-output: word_document
----
 
 ```{r}
 #read in data

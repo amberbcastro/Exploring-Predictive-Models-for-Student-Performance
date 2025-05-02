@@ -278,7 +278,7 @@ Silhoette Score: 0.41
 
 ####  What’s being tried already?
 
-* **Commercial early‑alert platforms** (e.g: Salesforce EA) promise 3‑15 % retention bumps but are pricey and opaque. ([Home][3])
+* **Commercial early‑alert platforms** (e.g: QuadC) promise 3‑15 % retention bumps but are pricey and opaque. ([Home][3])
 * **Research & open‑source models** can reach **AUC ≈ 0.78–0.88** with 50 k‑student datasets. ([Nature][1])
 * **Gaps:** high cost, and known algorithmic bias against some groups. ([Every Learner Everywhere][2])
 
@@ -286,8 +286,6 @@ Silhoette Score: 0.41
 ####  Why fund this work?
 
 
-
-**Ask:**
 
 
 [1]: https://www.nature.com/articles/s41598-023-32484-w "Using machine learning to predict student retention from socio-demographic characteristics and app-based engagement metrics | Scientific Reports"

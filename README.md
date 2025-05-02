@@ -171,8 +171,17 @@ Logistic Regression analyzes the relationship between a dependent categorical va
 
 **Results**
 
-### Confusion Matrix
+### Confusion Matrix: Model Metrics 
 
+| Metric  | Value     |
+|-----------------|----------|
+| `Accuracy`|  `0.6944` |
+| `Precision`|  `0.5294` |
+| `Recall`|  `0.75` |
+| `F-1 Score`| `0.6207` | 
+| `Specificity`|  `0.6667` | 
+| `Type 1 Error`|  `0.3333` | 
+| `Type 2 Error`|  `0.25`   |
 
 
 **Approach 3: K-Means Clustering with Elbow Method + Silhouette Analysis**

@@ -200,9 +200,9 @@ Logistic Regression analyzes the relationship between a dependent categorical va
   Type 2 Error measures how many observations the model predicts as a false negative. That is the observation was labeled as negative, but belonged to the positive class. 25% of the test data was incorrectly identified as belonging to the negative class. 
 
 ### ROC Curve: AUC Score
-The Reciever Operating Characteristic Curve plots the True Positive Rate against the False Positive Rate at different thresholds. It is a visual illustrating the trade-off between sensitivty and specificity. The AUC Score indicates how often the model distinguishes between classes.
+The Reciever Operating Characteristic Curve plots the True Positive Rate against the False Positive Rate at different thresholds. It is a visual illustrating the trade-off between sensitivty and specificity. The AUC Score indicates how often the model distinguishes between classes. The model is able to distinguish between classes for about 79.5% of the test data.
 
-![ROC Curve: AUC Score]()  
+![ROC Curve: AUC Score](graphs/ROC_Curve.png)  
 
 **Approach 3: K-Means Clustering with Elbow Method + Silhouette Analysis**
 

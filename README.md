@@ -184,18 +184,18 @@ Logistic Regression analyzes the relationship between a dependent categorical va
 | `Type 2 Error`|  `0.25`   |
 
 #### What this means
-_ **Accuracy = 0.6944**
+-  **Accuracy = 0.6944**
 Accuracy measures how often the model's predictions are correct overall. About 69.44% of the test data was identified to the correct class. 
 - **Precision = 0.5249**
- Precision measures how many of the positive instances predicted are true postives, or actually positive. About 52.49% of the test data that was actually positive was correctly identified.
+  Precision measures how many of the positive instances predicted are true postives, or actually positive. About 52.49% of the test data that was actually positive was correctly identified.
 - **Recall = 0.75**
- Recall shows how well the model identifies all positive cases. It is the proportion of true positives detected out of all positive instances. About 75% of the test data that were actually positive were identified by the model.
+  Recall shows how well the model identifies all positive cases. It is the proportion of true positives detected out of all positive instances. About 75% of the test data that were actually positive were identified by the model.
 - **F-1 Score = 0.6207**
- The F-1 score combines precision and recall into a single metric to balance each other's trade offs. The model was able to identify positive cases and minimize both false positives and false negatives for about 62.07% of the test data.
+   The F-1 score combines precision and recall into a single metric to balance each other's trade offs. The model was able to identify positive cases and minimize both false positives and false negatives for about 62.07% of the test data.
 - **Specificty = 0.6667**
- Specificity is the true negative rate. It measures how well the model correctly identifies negative rates. The model was able to identify negative observations for around 66.67% of the test data.
+  Specificity is the true negative rate. It measures how well the model correctly identifies negative rates. The model was able to identify negative observations for around 66.67% of the test data.
 - **Type 1 Error = 0.3333**
- Type 1 Error measures how many of the observations the model predicts as a false positive. That is the observation was labeled as positive, but belonged to the negative class. 33.33% of the test data was incorrectly identified as belonging to the positive class. 
+  Type 1 Error measures how many of the observations the model predicts as a false positive. That is the observation was labeled as positive, but belonged to the negative class. 33.33% of the test data was incorrectly identified as belonging to the positive class. 
 - **Type 2 Error = 0.25**
  Type 2 Error measures how many observations the model predicts as a false negative. That is the observation was labeled as negative, but belonged to the positive class. 25% of the test data was incorrectly identified as belonging to the negative class. 
 

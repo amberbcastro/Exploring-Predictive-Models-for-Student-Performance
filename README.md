@@ -255,3 +255,42 @@ Silhoette Score: 0.41
 
 
 ## The Pitch
+
+*US colleges lose **about \$16.5 billion every year** when students drop out before finishing their degrees.* ([Nature][1])
+
+#### Relation to this project
+
+|                | **Same idea**                                                                                 | **New add-ons**                                                                                  |
+| -------------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Data**       | Start with early numbers (mid‑term exam scores ↔ first‑semester grades, log‑ins, attendance). | Retention adds money issues, advising notes, demographics.                                      |
+| **Math tools** | Linear / logistic regression, k‑means, cross‑validation.                                      | Must handle huge, messy data and class‑imbalance (only a few dropouts).                         |
+| **Goal**       | Catch trouble early so we can act.                                                            | Stakes jump from “help with Exam 3” to “keep a student (and their tuition) in school.”                |
+| **Ethics**     | Need clear models and fairness checks.                                                        | Bias is riskier and a wrong flag can steer someone out of a major. ([Every Learner Everywhere][2]) |
+
+
+#### Who would care about this
+
+* University presidents and finance chiefs – lost tuition hurts budgets.
+* Student‑success offices – funding is tied to graduation rates.
+* Advisors and faculty – fewer failing students.
+* Students and families – debt without a degree is hard.
+
+
+####  What’s being tried already?
+
+* **Commercial early‑alert platforms** (e.g: Salesforce EA) promise 3‑15 % retention bumps but are pricey and opaque. ([Home][3])
+* **Research & open‑source models** can reach **AUC ≈ 0.78–0.88** with 50 k‑student datasets. ([Nature][1])
+* **Gaps:** high cost, and known algorithmic bias against some groups. ([Every Learner Everywhere][2])
+
+
+####  Why fund this work?
+
+
+
+**Ask:**
+
+
+[1]: https://www.nature.com/articles/s41598-023-32484-w "Using machine learning to predict student retention from socio-demographic characteristics and app-based engagement metrics | Scientific Reports"
+[2]: https://www.everylearnereverywhere.org/blog/what-are-the-risks-of-algorithmic-bias-in-higher-education/ "What Are the Risks of Algorithmic Bias in Higher Education? - Every Learner Everywhere"
+[3]: https://www.quadc.io/blog/how-predictive-analytics-and-ai-boost-student-retention-rates "How Predictive Analytics and AI Boost Student Retention Rates"
+

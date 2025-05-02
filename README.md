@@ -163,7 +163,7 @@ Linear regression draws the best straight line through the data points to predic
 
 **Approach 2: Logistic Regression with Cross Validation**
 
-Logistic Regression analyzes the relationship between a dependent categorical variable, and one or more independent predictor variables. A categorical variable is a value that has different levels based on the values the variable takes on. A cateogrical variable in logistic regression is of a binary form. In other words, the variable only has two outcomes. The goal of logistic regression is to predict the probability of an instance belongs to one of the two outcomes. There are two classes: positive and negative. The positive class is typically the outcome researchers want to study. The negative class is still of interest, but is not as heavily focused on. For the two classes, there are dummy variables introduced in plaace of the actual values. For our project, we changed a student's Exam 3 score to 1 if it was above at or above 70, and 0 if it was below 70. Changing the values of the dependent variable simplifies the problem into a classification problem. So, instead of looking for a number like in linear regression, we are looking for how well the model classifies a student's Exam 3 score based on their Exam 1 and Exam 2 scores. Before creating the model the data was split into subsets. One training, and one testing dataset. The training dataset was used to build the model, and the testing dataset was used to ensure the model is useful based on key metrics. 70% of the original data was used for training, and the remaining 30% was used for testing the model. After using Cross Validation, the model metrics were obtained through a confusion matrix. 
+Logistic Regression analyzes the relationship between a dependent categorical variable, and one or more independent predictor variables. A categorical variable is a value that has different levels based on the values the variable takes on. A cateogrical variable in logistic regression is of a binary form. In other words, the variable only has two outcomes. The goal of logistic regression is to predict the probability of an instance belongs to one of the two outcomes. There are two classes: positive and negative. The positive class is typically the outcome researchers want to study. The negative class is still of interest, but is not as heavily focused on. For the two classes, there are dummy variables introduced in plaace of the actual values. For our project, we changed a student's Exam 3 score to 1 if it was above at or above 70, and 0 if it was below 70. Changing the values of the dependent variable simplifies the problem into a classification problem. So, instead of looking for a number like in linear regression, we are looking for how well the model classifies a student's Exam 3 score based on their Exam 1 and Exam 2 scores. Before creating the model the data was split into subsets. One training, and one testing dataset. The training dataset was used to build the model, and the testing dataset was used to ensure the model is useful based on key metrics. 70% of the original data was used for training, and the remaining 30% was used for testing the model. After using Cross Validation, the model metrics were obtained through a confusion matrix. Additional model metrics include the AUC score. 
 
 **Code**
 
@@ -183,6 +183,21 @@ Logistic Regression analyzes the relationship between a dependent categorical va
 | `Type 1 Error`|  `0.3333` | 
 | `Type 2 Error`|  `0.25`   |
 
+#### What this means
+_ **Accuracy = 0.6944**
+   Accuracy measures how often the model's predictions are correct overall. About 69.44% of the test data was identified to the correct class. 
+- **Precision = 0.5249**
+   Precision measures how many of the positive instances predicted are true postives, or actually positive. About 52.49% of the test data that was actually positive was correctly identified.
+- **Recall = 0.75**
+  Recall shows how well the model identifies all positive cases. It is the proportion of true positives detected out of all positive instances. About 75% of the test data that were actually positive were identified by the model.
+- **F-1 Score = 0.6207**
+  The F-1 score combines precision and recall into a single metric to balance each other's trade offs. The model was able to identify positive cases and minimize both false positives and false negatives for about 62.07% of the test data.
+- **Specificty = 0.6667**
+  Specificity is the true negative rate. It measures how well the model correctly identifies negative rates. The model was able to identify negative observations for around 66.67% of the test data.
+- **Type 1 Error = 0.3333**
+  Type 1 Error measures how many of the observations the model predicts as a false positive. That is the observation was labeled as positive, but belonged to the negative class. 33.33% of the test data was incorrectly identified as belonging to the positive class. 
+- **Type 2 Error = 0.25**
+  Type 2 Error measures how many observations the model predicts as a false negative. That is the observation was labeled as negative, but belonged to the positive class. 25% of the test data was incorrectly identified as belonging to the negative class. 
 
 **Approach 3: K-Means Clustering with Elbow Method + Silhouette Analysis**
 

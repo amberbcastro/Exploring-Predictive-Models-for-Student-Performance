@@ -285,10 +285,11 @@ Silhoette Score: 0.41
 
 ####  Why fund this work?
 
-* **Student Retention Rate Secured** Less college students failing classes leads to less students dropping out, or having to repeat courses. Less dropping out means more students complete their degrees. More students completing degrees leads to higher wages earned. Higher wages earned stimulate economic growth through consumer spending. 
+* **Economic Growth** - Less college students failing classes leads to less students dropping out, or having to repeat courses. Less dropping out means more students complete their degrees. More students completing degrees leads to higher wages earned. Higher wages earned stimulate economic growth through consumer spending. ([College Graduates Benefit Society][4])
 
 
 [1]: https://www.nature.com/articles/s41598-023-32484-w "Using machine learning to predict student retention from socio-demographic characteristics and app-based engagement metrics | Scientific Reports"
 [2]: https://www.everylearnereverywhere.org/blog/what-are-the-risks-of-algorithmic-bias-in-higher-education/ "What Are the Risks of Algorithmic Bias in Higher Education? - Every Learner Everywhere"
 [3]: https://www.quadc.io/blog/how-predictive-analytics-and-ai-boost-student-retention-rates "How Predictive Analytics and AI Boost Student Retention Rates"
+[4]: https://www.aplu.org/our-work/4-policy-and-advocacy/publicuvalues/societal-benefits
 

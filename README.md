@@ -285,7 +285,7 @@ Silhoette Score: 0.41
 
 ####  Why fund this work?
 
-
+* **Student Retention Rate Secured** Less college students failing classes leads to less students dropping out, or having to repeat courses. Less dropping out means more students complete their degrees. More students completing degrees leads to higher wages earned. Higher wages earned stimulate economic growth through consumer spending. 
 
 
 [1]: https://www.nature.com/articles/s41598-023-32484-w "Using machine learning to predict student retention from socio-demographic characteristics and app-based engagement metrics | Scientific Reports"
